@@ -63,12 +63,18 @@ void swapMaxMinarr(int nums2[], int sz2){
         if(largest < nums2[i]){
             largest = nums2[i];
         }
+
+        // largest = max(largest, nums2[i]);  -> alternative approach using max() function
+
         if(largest == nums2[i]){
             indexLargest = i;
         }
+
         if(smallest > nums2[i]){
             smallest = nums2[i];
         }
+        // smallest = min(smallest, nums2[i]);  -> alternative approach using min() function
+        
         if(smallest == nums2[i]){
             indexSmallest = i;
         }
@@ -110,6 +116,8 @@ int main(){
     
     // calculating size of an array : 
     int size = (sizeof(arr)/sizeof(int));
+    // Using .size()  function is not possible here as arr is a primitive array and not a class object.
+    cout<<"Size of the array = "<<size<<"\n";
     
     // Running a for loop to print all elements of the array : 
     for(int i = 0; i< size; i++){
@@ -122,47 +130,50 @@ int main(){
 
 
 
-    // Least or Minimum Element from the array    
+        
     int smallest = INT_MAX;
-    int indexSmallest;
+    int largest = INT_MIN;
+    int smallestIndex;
+    int largestIndex ;
+
+    // Least or Minimum Element from the array : 
     for(int i = 0; i< size; i++){
-    /*    if (smallest > arr[i]){
+    /*  Approach 1 : Using if-conditon : 
+    
+        // For smallest element : 
+        if (smallest > arr[i]){
             smallest = arr[i];
+        }
+
+
+        // For largest element : 
+
+        if(largest<arr[i]){
+            largest = arr[i];
         }
     */  
         
-        // Alt way 
+        // Approach 2 : Using min(a,b) & max(a,b) function : 
         smallest = min(smallest, arr[i]);
-        
+        largest = max(arr[i], largest);
+
+
+
+        // Find Index of smallest and largest element : 
         if (smallest == arr[i]){
-            indexSmallest = i;
+            smallestIndex = i;
+        }
+
+        if (largest == arr[i]){
+            largestIndex = i;
         }
     }
     
     cout<<"Minimum Element : "<<smallest<<"\n";
-    cout<<"Index of Minimum Element : "<<indexSmallest<<"\n";
-    
-    
-    // Largest Element of the array : 
-    int largest = INT_MIN;
-    int indexLargest ;
-    for( int i = 0; i <size; i++){
-    /*    if(largest<arr[i]){
-            largest = arr[i];
-        }
-    */
-    
-        
-        // Alt way
-        largest = max(arr[i], largest);
-        
-        if (largest == arr[i]){
-            indexLargest = i;
-        }
-        
-    }
+    cout<<"Index of Minimum Element : "<<smallestIndex<<"\n";
     cout<<"Largest Element : "<<largest<<"\n";
-    cout<<"Index of Largest Element : "<<indexLargest<<"\n";
+    cout<<"Index of Largest Element : "<<largestIndex<<"\n";
+    
     
     
     
@@ -170,17 +181,28 @@ int main(){
     int nums[] = {2,5,7,-2,20,32,203};
     int sz_nums = sizeof(nums)/sizeof(nums[0]);
     int target;
-    cout<<"Enter Target element = ";
+    cout<<"\nzArray Elements are : ";
+    for(int i = 0; i<sz_nums; i++){
+        cout<<nums[i]<<" ";
+    }
+    cout<<"\nEnter Target element = ";
     cin>>target;
-    
-    cout<<linearSearch(nums, sz_nums, target)<<"\n";
+    int res = linearSearch(nums, sz_nums, target);
+    if(res == -1){
+        cout<<"Element not found in the array\n";
+    }
+    else{
+        cout<<"Element found at index = "<<res<<"\n";
+
+    }
+
     
     
     
     // Reversing an array (2 pointer approach) :
     int nums1[] = {2,5,6,9,2,0,-1};
     int sz1 = sizeof(nums1)/sizeof(nums1[0]);
-    cout<<"Original Array : ";
+    cout<<"\nOriginal Array : ";
     for(int i = 0; i<sz1; i++){
         cout<<nums1[i]<< " ";
     }
@@ -198,7 +220,8 @@ int main(){
     nums = [2, 5, 6, 9, 2, 0, -1]
     indexes: 0  1  2  3  4  5  6
     
-    start = 0 -> points to teh first element 
+    start = 0 -> points to the
+     first element 
     end = sz - 1 = 6 -> points to the last element
     
     Goal : swap nums[start] and nums[end] repeatedly until the array is reversed.
@@ -235,7 +258,7 @@ int main(){
     
     // Swapping Max and Min number of an array : 
     
-    // nums2[] = {2, 5, 6, 9, 2, -1} , 9 is the largest element at index 3, and -1 is the smallest element which is at index 5
+    // nums2[] = {2, 5, 6, 9, 2, -1} ; 9 is the largest element at index 3, and -1 is the smallest element which is at index 5
     swapMaxMinarr(nums2, sz2);
     // After calling swapping function 9 comes at index 5 and smallest elent (-1) has substituted at  index 3.
     cout<<"After swapping Max and Min element of array : ";
