@@ -87,24 +87,23 @@ void swapMaxMinarr(int nums2[], int sz2){
 
 // Function for Print all unique values in an array : 
 
-/*
+
 void uniqueval(int nums3[], int sz3){
+    cout<<"\nUnique values in the array are : ";
     for(int i = 0; i<sz3; i++){
-        
-        for(int j = 1; j<=sz3; j++){
-            if(i!=j and nums3[i] == nums3[j]){
-                flag = false;
+        bool matchfound = false;
+        for(int j = 1; j<sz3; j++){
+            if(i != j && nums3[i] == nums3[j]){
+                matchfound = true;
                 break;
             }
-            
-            if(flag){
-                cout<<nums3[i];
-            }
         }
-
+        if(!matchfound){
+            cout<<nums3[i] << " ";
+        }
     }
 }
-*/
+
 
 
 
@@ -181,7 +180,7 @@ int main(){
     int nums[] = {2,5,7,-2,20,32,203};
     int sz_nums = sizeof(nums)/sizeof(nums[0]);
     int target;
-    cout<<"\nzArray Elements are : ";
+    cout<<"\nArray Elements are : ";
     for(int i = 0; i<sz_nums; i++){
         cout<<nums[i]<<" ";
     }
@@ -273,9 +272,9 @@ int main(){
     
     
     // Print all unique values in an array
-    int nums3[] = {2,1,2,1,3,4,2,1,2,4};
+    int nums3[] = {2,1,2,1,3,4,5,6,2,1,2,4};
     int sz3 = sizeof(nums3)/sizeof(nums3[0]);
-    //uniqueval(nums3, sz3);
+    uniqueval(nums3, sz3);
     
 
 
@@ -287,8 +286,22 @@ int main(){
 
 
 
-   // Intersection of 2 arrays
+   // Intersection of 2 arrays :
+    int x[] = {1,2,3,4,5};
+    int y[] = {4,5,6,7,8};
+
+    int szx = sizeof(x)/sizeof(x[0]);  
+    int szy = sizeof(y)/sizeof(y[0]);
+    
+    cout<<"\n\nIntersection of 2 arrays is : ";
+    for(int i = 0; i<szx; i++){
+        for(int j =0; j<szy ; j++){
+            if(x[i] == y[j]){
+                cout<<x[i]<<" ";
+            }
+        }
+    }
+    
 
     return 0;
 }
-
