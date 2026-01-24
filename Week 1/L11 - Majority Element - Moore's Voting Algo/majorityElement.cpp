@@ -71,6 +71,21 @@ int mooreVotingAlgo(vector<int> &vc){
         return -1;
     }
     
+
+
+    // Variation : Return -1 if there is no majority element : 
+
+    int f = 0;
+    for(auto val : vc){
+        if(val == ans){
+            f++;
+        }
+    }
+    if(f > vc.size()/2){
+        return ans;
+    }else{
+        return -1;
+    }
 }
 
 
@@ -85,6 +100,10 @@ int main(){
 //    cin >> target;
     
 /*
+
+
+// Time Complexity : O(n)
+
     for(auto i : v){
         for(auto j : v){
             if(i != j && (i + j) == target){
@@ -99,31 +118,11 @@ int main(){
 
 
 
-/*
-    vector<int> mem;
-    int t;
-    for(int i = 0; i < v.size(); i++){
-        t = target - v[i];
-        for( int j = 0; j < mem.size(); j++){
-            if(t == mem[j]){
-                cout << mem[j] << " + " << v[i] << " = " << target << "\n"; 
-                return 0;
-            }
-        }
-        mem.push_back(v[i]);
-    }
-    cout << "No such pair exist!";
-*/
-
-
-
-
-
 
 
 /*
 
-// 2 Pointer Approach :
+// 2 Pointer Approach : ( b'coz it is for sorted array)-> starting element will be the least and the ending element will be maximum
 
     int i = 0, j = v.size()-1, pairSum;
     while(i<j){
