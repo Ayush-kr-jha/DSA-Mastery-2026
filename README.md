@@ -9,7 +9,7 @@ Data Structures and Algorithms using a structured playlist.
 - folder organization
 - Time and space complexity analysis
 
-## 🧠 Topics Covered
+## Topics Covered
 - Arrays
 - Strings
 - Linked List
@@ -22,5 +22,5 @@ Data Structures and Algorithms using a structured playlist.
 To build strong problem-solving skills and prepare for
 coding interviews through consistent practice and documentation.
 
-## 🛠 Language Used
+## Language Used
 - C++
