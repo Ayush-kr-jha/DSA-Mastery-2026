@@ -19,7 +19,7 @@ This folder contains C++ programs that demonstrate fundamental and intermediate 
    - Access elements using `front()`, `back()`, and `at()`
    - Resize and reverse vectors
    - Single number problem (LeetCode 136)
-   - LeetCode Problem : [136. Single Number] https://leetcode.com/problems/single-number/description/
+   - LeetCode Problem : [136. Single Number](https://leetcode.com/problems/single-number/description/)
 
 3. **kadane_max_subarray.cpp**
    - Kadane's Algorithm
