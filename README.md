@@ -9,14 +9,16 @@ Data Structures and Algorithms.
 - folder organization
 - Time and space complexity analysis
 
-## Topics Covered
-- Arrays
-- Strings
-- Linked List
-- Stack & Queue
-- Trees
-- Graphs
-- Dynamic Programming
+## Learning Progress
+
+- ✅ Arrays — In Progress  
+- ⏭️ Strings — Upcoming  
+- ⏸️ Linked List — Not Started  
+- ⏸️ Stack & Queue — Not Started  
+- ⏸️ Trees — Not Started  
+- ⏸️ Graphs — Not Started  
+- ⏸️ Dynamic Programming — Not Started  
+
 
 ## Goal
 To build strong problem-solving skills and prepare for
