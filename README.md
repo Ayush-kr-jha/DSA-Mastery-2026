@@ -1,7 +1,7 @@
 # DSA Mastery 2026 
 
 This repository documents my complete journey of learning
-Data Structures and Algorithms using a structured playlist.
+Data Structures and Algorithms.
 
 ## What's inside
 - C++ implementations of DSA problems
