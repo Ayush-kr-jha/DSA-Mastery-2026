@@ -35,5 +35,3 @@ This folder contains C++ programs that demonstrate fundamental and intermediate 
 ## Notes
 - All programs are written in **C++**.
 - Code includes **comments** explaining logic and time complexity.
-- Suitable for learning **Data Structures and Algorithms (DSA)** basics.
-
