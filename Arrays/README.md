@@ -23,6 +23,7 @@ This folder contains C++ programs that demonstrate fundamental and intermediate 
 3. **kadane_max_subarray.cpp**
    - Kadane's Algorithm
    - Finds maximum contiguous subarray sum
+   - LeetCode Problem: [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
    - Handles arrays with negative numbers
 
 4. **majority_element_moore.cpp**
@@ -31,6 +32,7 @@ This folder contains C++ programs that demonstrate fundamental and intermediate 
      - Brute-force
      - Sorting
      - Moore’s Voting Algorithm
+   - LeetCode Problem: [169. Majority Element](https://leetcode.com/problems/majority-element/)
 
 ## Notes
 - All programs are written in **C++**.
