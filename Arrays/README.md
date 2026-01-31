@@ -38,7 +38,7 @@ This folder contains C++ programs that demonstrate fundamental and intermediate 
    - Find maximum profit from a single buy and sell
    - Track minimum price and maximum profit
    - Array-based problem, similar to Kadane’s Algorithm
-   - LeetCode Problem: [121. Best Time to Buy and Sell Stock](./best-time-to-buy-and-sell-stock.cpp)
+   - LeetCode Problem: [121. Best Time to Buy and Sell Stock]([./best-time-to-buy-and-sell-stock.cpp](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/))
 
 ## Notes
 - All programs are written in **C++**.
