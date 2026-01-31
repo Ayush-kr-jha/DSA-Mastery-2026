@@ -33,6 +33,12 @@ This folder contains C++ programs that demonstrate fundamental and intermediate 
      - Sorting
      - Moore’s Voting Algorithm
    - LeetCode Problem: [169. Majority Element](https://leetcode.com/problems/majority-element/)
+  
+5. **best-time-to-buy-and-sell-stock.cpp**
+   - Find maximum profit from a single buy and sell
+   - Track minimum price and maximum profit
+   - Array-based problem, similar to Kadane’s Algorithm
+   - LeetCode Problem: [121. Best Time to Buy and Sell Stock](./best-time-to-buy-and-sell-stock.cpp)
 
 ## Notes
 - All programs are written in **C++**.
