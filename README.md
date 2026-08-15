@@ -29,3 +29,19 @@ coding interviews through consistent practice and documentation.
 
 
 This repository is actively updated as I progress through my DSA learning.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0002-add-two-numbers) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0002-add-two-numbers) |
+<!---LeetCode Topics End-->
