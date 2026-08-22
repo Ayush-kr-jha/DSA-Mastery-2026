@@ -48,6 +48,7 @@ This repository is actively updated as I progress through my DSA learning.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0001-two-sum) |
+| [0053-maximum-subarray](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0075-sort-colors) |
 ## Hash Table
 |  |
@@ -69,4 +70,12 @@ This repository is actively updated as I progress through my DSA learning.
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0075-sort-colors) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0053-maximum-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Ayush-kr-jha/DSA-Mastery-2026/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
